@@ -1,0 +1,9 @@
+versoin: '3.4'
+services:
+ backend:
+  build: ./hello-world-api
+  command: npm run start:dev
+  volumes:
+   - './backend:/opt/kancerbero/backend'
+  ports:
+   - '3000:3000'
